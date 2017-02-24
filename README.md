@@ -233,7 +233,7 @@ vm.updateBook = function(book){
 
 ### Independent Practice
 
-[Sprint 3 of tunely-angular](https://github.com/SF-WDI-LABS/tunely-angular/blob/master/docs/sprint3.md) - Don't forget to checkout `solutions_sprint_2` and follow the [branching instructions](https://github.com/SF-WDI-LABS/tunely-angular/blob/master/docs/starting_with_a_branch.md#subsequent-sprints);
+[Sprint 3 of tunely-angular](https://github.com/SF-WDI-LABS/tunely-angular/blob/master/docs/sprint3.md) - Don't forget to checkout `solutions_sprint_2` and follow the [branching instructions](https://github.com/SF-WDI-LABS/tunely-angular/blob/master/docs/starting_with_a_branch.md#subsequent-sprints).
 
 ## Closing Thoughts
 - Check in with yourself: Could you explain each piece of the `$http` service syntax? Could you write out the syntax without looking at a previous example?
