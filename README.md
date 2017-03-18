@@ -135,7 +135,7 @@ vm.sendUpdate = function(book){
   5. If an error response comes back, log the error, optionally, notify the user of the error, and do not update the data in the view.
 
 
-<details><summary>**Delete a resource -- with an example `$http` request to `DELETE /api/books/:id`.**</summary>
+<details><summary> **Delete a resource -- with an example `$http` request to `DELETE /api/books/:id`.** </summary>
 
 ```js
 vm.deleteBook = function(book){
@@ -192,7 +192,7 @@ Why was this hard when we were using jQuery and Handlebars on the client side?
 This step is quite a bit easier in Angular. We can simply change the data that's bound to the view.
 
 <details>
-  <summary>`.then` for delete.</summary>
+  <summary> `.then` for delete.</summary>
   
 ```javascript
 vm.deleteBook = function(book){
@@ -211,7 +211,7 @@ vm.deleteBook = function(book){
 </details>
 
 <details>
-  <summary>`.then` for update.</summary>
+  <summary> `.then` for update.</summary>
   
 ```javascript
 vm.updateBook = function(book){
