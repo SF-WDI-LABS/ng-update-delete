@@ -192,7 +192,7 @@ Why was this hard when we were using jQuery and Handlebars on the client side?
 This step is quite a bit easier in Angular. We can simply change the data that's bound to the view.
 
 <details>
-  <summary> `.then` for delete.</summary>
+  <summary> .then method for delete.</summary>
   
 ```javascript
 vm.deleteBook = function(book){
@@ -211,7 +211,7 @@ vm.deleteBook = function(book){
 </details>
 
 <details>
-  <summary> `.then` for update.</summary>
+  <summary> .then mehod for update.</summary>
   
 ```javascript
 vm.updateBook = function(book){
