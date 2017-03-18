@@ -12,6 +12,7 @@ Market: SF
 Without looking at any outside resources, write out the syntax for an Angular `$http` GET request on the board in pairs.
 
 <details><summary></summary>
+
 ```javascript
 $http({
   method: 'GET',
@@ -25,6 +26,7 @@ function errorCallback(error) {
   console.log('There was an error getting the data', error);
 }
 ```
+
 </details>
 
 ### Why is this important?
@@ -52,18 +54,15 @@ Angular is built to help develop full CRUD apps. Update and delete are the more 
 
 ### Update a database using `$http`
 
-<details>
-  <summary>
   **Pseudocode an update function on the client side**
-  </summary>
+
   1. Gather the proper resources to send the request
-    1. Specify the proper endpoint on the API to update the proper resource.
-    2. Select the proper data to send in this PUT request.
+    - Specify the proper endpoint on the API to update the proper resource.
+    - Select the proper data to send in this PUT request.
   3. Make the PUT request with all of the proper data.
   4. If a successful response comes back, update the data in your view.
   5. If an error response comes back, log the error, optionally, notify the user of the error, and do not update the data in the view.
-</details>
-<br>
+
 <details><summary> **Update a resource -- with an example `$http` request to `PUT /api/books/:id`.** </summary>
 
 ```js
@@ -86,7 +85,8 @@ vm.sendUpdate = function(book){
 
 ... and a sample response:
 <details><summary>click to see full response</summary>
-```js
+
+```json
 {
   "data": {
     _id: "56fd8372m098ok2u89uclwm09",
@@ -125,18 +125,18 @@ vm.sendUpdate = function(book){
 
 ### Delete an entry in the database using `$http`
 
-<details>
-  <summary>
+
   **Pseudocode a delete function on the client side**
-  </summary>
+
   1. Gather the proper resources to send the request
-    1. Get the proper endpoint on the API to update the proper resource. Make sure you know the way you are supposed to identify a specific item to delete (by id? by name?). For example, `/api/albums/:id`.
+    - Get the proper endpoint on the API to update the proper resource. Make sure you know the way you are supposed to identify a specific item to delete (by id? by name?). For example, `/api/albums/:id`.
   3. Make the DELETE request to the proper endpoint.
   4. If a successful response comes back, update the data in your view.
   5. If an error response comes back, log the error, optionally, notify the user of the error, and do not update the data in the view.
-</details>
-<br>
+
+
 <details><summary>**Delete a resource -- with an example `$http` request to `DELETE /api/books/:id`.**</summary>
+
 ```js
 vm.deleteBook = function(book){
   $http({
@@ -153,7 +153,8 @@ vm.deleteBook = function(book){
 
   ... and a sample response:
 <details><summary>click to see full response</summary>
-```js
+
+```json
 {
   "data": {
     _id: "56fd8372m098ok2u89uclwm09",
@@ -192,6 +193,7 @@ This step is quite a bit easier in Angular. We can simply change the data that's
 
 <details>
   <summary>`.then` for delete.</summary>
+  
 ```javascript
 vm.deleteBook = function(book){
   $http({
@@ -205,10 +207,12 @@ vm.deleteBook = function(book){
   });
 }
 ```
+
 </details>
 
 <details>
   <summary>`.then` for update.</summary>
+  
 ```javascript
 vm.updateBook = function(book){
   $http({
@@ -228,6 +232,7 @@ vm.updateBook = function(book){
   });
 }
 ```
+
 </details>
 
 
