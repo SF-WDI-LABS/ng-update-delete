@@ -63,7 +63,7 @@ Angular is built to help develop full CRUD apps. Update and delete are the more 
   4. If a successful response comes back, update the data in your view.
   5. If an error response comes back, log the error, optionally, notify the user of the error, and do not update the data in the view.
 
-<details><summary> **Update a resource -- with an example `$http` request to `PUT /api/books/:id`.** </summary>
+**<details><summary> Update a resource -- with an example `$http` request to `PUT /api/books/:id`. </summary>**
 
 ```js
 vm.sendUpdate = function(book){
@@ -135,7 +135,7 @@ vm.sendUpdate = function(book){
   5. If an error response comes back, log the error, optionally, notify the user of the error, and do not update the data in the view.
 
 
-<details><summary> **Delete a resource -- with an example `$http` request to `DELETE /api/books/:id`.** </summary>
+**<details><summary> Delete a resource -- with an example `$http` request to `DELETE /api/books/:id`. </summary>**
 
 ```js
 vm.deleteBook = function(book){
